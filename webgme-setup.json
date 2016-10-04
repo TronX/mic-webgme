@@ -1,4 +1,12 @@
 {
-  "components": {},
-  "dependencies": {}
+  "components": {
+    "seeds": {
+      "SimpleWorkflow": {
+        "src": "src/seeds/SimpleWorkflow"
+      }
+    }
+  },
+  "dependencies": {
+    "seeds": {}
+  }
 }
