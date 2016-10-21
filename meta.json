@@ -1,0 +1,68 @@
+[
+    {
+        "name": "FCO",
+        "path": "/1",
+        "nbrOfChildren": 0,
+        "base": null
+    },
+    {
+        "name": "Language",
+        "path": "/9",
+        "nbrOfChildren": 9,
+        "base": "FCO"
+    },
+    {
+        "name": "Final",
+        "path": "/9/P",
+        "nbrOfChildren": 0,
+        "base": "StateBase"
+    },
+    {
+        "name": "StateBase",
+        "path": "/9/k",
+        "nbrOfChildren": 0,
+        "base": "FCO"
+    },
+    {
+        "name": "IntermediateBase",
+        "path": "/9/J",
+        "nbrOfChildren": 0,
+        "base": "StateBase"
+    },
+    {
+        "name": "Decision",
+        "path": "/9/i",
+        "nbrOfChildren": 0,
+        "base": "IntermediateBase"
+    },
+    {
+        "name": "Workflow",
+        "path": "/9/B",
+        "nbrOfChildren": 0,
+        "base": "FCO"
+    },
+    {
+        "name": "Folder",
+        "path": "/9/W",
+        "nbrOfChildren": 0,
+        "base": "FCO"
+    },
+    {
+        "name": "Transition",
+        "path": "/9/U",
+        "nbrOfChildren": 0,
+        "base": "FCO"
+    },
+    {
+        "name": "Intermediate",
+        "path": "/9/y",
+        "nbrOfChildren": 0,
+        "base": "IntermediateBase"
+    },
+    {
+        "name": "Initial",
+        "path": "/9/G",
+        "nbrOfChildren": 0,
+        "base": "StateBase"
+    }
+]

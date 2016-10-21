@@ -1,0 +1,330 @@
+{
+    "name": "ROOT",
+    "children": {
+        "1": {
+            "name": "FCO",
+            "isMeta": true,
+            "metaType": "FCO",
+            "children": {}
+        },
+        "9": {
+            "name": "Language",
+            "isMeta": true,
+            "metaType": "Language",
+            "base": "FCO",
+            "children": {
+                "P": {
+                    "name": "Final",
+                    "isMeta": true,
+                    "metaType": "Final",
+                    "base": "StateBase",
+                    "children": {}
+                },
+                "k": {
+                    "name": "StateBase",
+                    "isMeta": true,
+                    "metaType": "StateBase",
+                    "base": "FCO",
+                    "children": {}
+                },
+                "J": {
+                    "name": "IntermediateBase",
+                    "isMeta": true,
+                    "metaType": "IntermediateBase",
+                    "base": "StateBase",
+                    "children": {}
+                },
+                "i": {
+                    "name": "Decision",
+                    "isMeta": true,
+                    "metaType": "Decision",
+                    "base": "IntermediateBase",
+                    "children": {}
+                },
+                "B": {
+                    "name": "Workflow",
+                    "isMeta": true,
+                    "metaType": "Workflow",
+                    "base": "FCO",
+                    "children": {}
+                },
+                "W": {
+                    "name": "Folder",
+                    "isMeta": true,
+                    "metaType": "Folder",
+                    "base": "FCO",
+                    "children": {}
+                },
+                "U": {
+                    "event": "",
+                    "name": "Transition",
+                    "isMeta": true,
+                    "metaType": "Transition",
+                    "base": "FCO",
+                    "children": {}
+                },
+                "y": {
+                    "name": "Intermediate",
+                    "isMeta": true,
+                    "metaType": "Intermediate",
+                    "base": "IntermediateBase",
+                    "children": {}
+                },
+                "G": {
+                    "name": "Initial",
+                    "isMeta": true,
+                    "metaType": "Initial",
+                    "base": "StateBase",
+                    "children": {}
+                }
+            }
+        },
+        "h": {
+            "name": "Examples",
+            "isMeta": false,
+            "metaType": "Folder",
+            "base": "Folder",
+            "children": {
+                "b": {
+                    "name": "Shipping Workflow",
+                    "isMeta": false,
+                    "metaType": "Workflow",
+                    "base": "Workflow",
+                    "children": {
+                        "0": {
+                            "name": "Fraudulent Order?",
+                            "isMeta": false,
+                            "metaType": "Decision",
+                            "base": "Decision",
+                            "children": {}
+                        },
+                        "1": {
+                            "event": "",
+                            "name": "Transition",
+                            "isMeta": false,
+                            "metaType": "Transition",
+                            "src": "Check Fraudulency",
+                            "dst": "Fraudulent Order?",
+                            "base": "Transition",
+                            "children": {}
+                        },
+                        "2": {
+                            "event": "",
+                            "name": "Transition",
+                            "isMeta": false,
+                            "metaType": "Transition",
+                            "src": "Print \"Summary Report\"",
+                            "dst": "Click \"Back\" on Browser",
+                            "base": "Transition",
+                            "children": {}
+                        },
+                        "4": {
+                            "event": "",
+                            "name": "Transition",
+                            "isMeta": false,
+                            "metaType": "Transition",
+                            "src": "Yes",
+                            "dst": "View Open Batches",
+                            "base": "Transition",
+                            "children": {}
+                        },
+                        "5": {
+                            "name": "No",
+                            "isMeta": false,
+                            "metaType": "Intermediate",
+                            "base": "Intermediate",
+                            "children": {}
+                        },
+                        "6": {
+                            "name": "Process & Delete Order",
+                            "isMeta": false,
+                            "metaType": "Intermediate",
+                            "base": "Intermediate",
+                            "children": {}
+                        },
+                        "8": {
+                            "name": "Click \"Post Batch\"",
+                            "isMeta": false,
+                            "metaType": "Intermediate",
+                            "base": "Intermediate",
+                            "children": {}
+                        },
+                        "Ra": {
+                            "event": "",
+                            "name": "Transition",
+                            "isMeta": false,
+                            "metaType": "Transition",
+                            "src": "Print Packing Slips",
+                            "dst": "More Open Batches?",
+                            "base": "Transition",
+                            "children": {}
+                        },
+                        "M": {
+                            "event": "",
+                            "name": "Transition",
+                            "isMeta": false,
+                            "metaType": "Transition",
+                            "src": "More Open Batches?",
+                            "dst": "Yes",
+                            "base": "Transition",
+                            "children": {}
+                        },
+                        "J": {
+                            "event": "",
+                            "name": "Transition",
+                            "isMeta": false,
+                            "metaType": "Transition",
+                            "src": "More Open Batches?",
+                            "dst": "No",
+                            "base": "Transition",
+                            "children": {}
+                        },
+                        "f": {
+                            "name": "Shipping",
+                            "isMeta": false,
+                            "metaType": "Initial",
+                            "base": "Initial",
+                            "children": {}
+                        },
+                        "k": {
+                            "name": "View Open Batches",
+                            "isMeta": false,
+                            "metaType": "Intermediate",
+                            "base": "Intermediate",
+                            "children": {}
+                        },
+                        "U": {
+                            "name": "Check Fraudulency",
+                            "isMeta": false,
+                            "metaType": "Intermediate",
+                            "base": "Intermediate",
+                            "children": {}
+                        },
+                        "s": {
+                            "name": "Print \"Summary Report\"",
+                            "isMeta": false,
+                            "metaType": "Intermediate",
+                            "base": "Intermediate",
+                            "children": {}
+                        },
+                        "y": {
+                            "name": "Click \"Back\" on Browser",
+                            "isMeta": false,
+                            "metaType": "Intermediate",
+                            "base": "Intermediate",
+                            "children": {}
+                        },
+                        "Q": {
+                            "name": "Print Packing Slips",
+                            "isMeta": false,
+                            "metaType": "Intermediate",
+                            "base": "Intermediate",
+                            "children": {}
+                        },
+                        "Z": {
+                            "name": "More Open Batches?",
+                            "isMeta": false,
+                            "metaType": "Decision",
+                            "base": "Decision",
+                            "children": {}
+                        },
+                        "t": {
+                            "name": "Yes",
+                            "isMeta": false,
+                            "metaType": "Intermediate",
+                            "base": "Intermediate",
+                            "children": {}
+                        },
+                        "H": {
+                            "name": "Process and Ship outgoing mail",
+                            "isMeta": false,
+                            "metaType": "Final",
+                            "base": "Final",
+                            "children": {}
+                        },
+                        "W": {
+                            "event": "",
+                            "name": "Transition",
+                            "isMeta": false,
+                            "metaType": "Transition",
+                            "src": "Shipping",
+                            "dst": "View Open Batches",
+                            "base": "Transition",
+                            "children": {}
+                        },
+                        "O": {
+                            "event": "",
+                            "name": "Transition",
+                            "isMeta": false,
+                            "metaType": "Transition",
+                            "src": "No",
+                            "dst": "Process and Ship outgoing mail",
+                            "base": "Transition",
+                            "children": {}
+                        },
+                        "n": {
+                            "event": "",
+                            "name": "Transition",
+                            "isMeta": false,
+                            "metaType": "Transition",
+                            "src": "View Open Batches",
+                            "dst": "Check Fraudulency",
+                            "base": "Transition",
+                            "children": {}
+                        },
+                        "T": {
+                            "event": "Yes",
+                            "name": "Transition",
+                            "isMeta": false,
+                            "metaType": "Transition",
+                            "src": "Fraudulent Order?",
+                            "dst": "Process & Delete Order",
+                            "base": "Transition",
+                            "children": {}
+                        },
+                        "a": {
+                            "event": "No",
+                            "name": "Transition",
+                            "isMeta": false,
+                            "metaType": "Transition",
+                            "src": "Fraudulent Order?",
+                            "dst": "Click \"Post Batch\"",
+                            "base": "Transition",
+                            "children": {}
+                        },
+                        "h": {
+                            "event": "",
+                            "name": "Transition",
+                            "isMeta": false,
+                            "metaType": "Transition",
+                            "src": "Process & Delete Order",
+                            "dst": "Click \"Post Batch\"",
+                            "base": "Transition",
+                            "children": {}
+                        },
+                        "o": {
+                            "event": "",
+                            "name": "Transition",
+                            "isMeta": false,
+                            "metaType": "Transition",
+                            "src": "Click \"Post Batch\"",
+                            "dst": "Print \"Summary Report\"",
+                            "base": "Transition",
+                            "children": {}
+                        },
+                        "G": {
+                            "event": "",
+                            "name": "Transition",
+                            "isMeta": false,
+                            "metaType": "Transition",
+                            "src": "Click \"Back\" on Browser",
+                            "dst": "Print Packing Slips",
+                            "base": "Transition",
+                            "children": {}
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

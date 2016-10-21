@@ -4,9 +4,26 @@
       "SimpleWorkflow": {
         "src": "src/seeds/SimpleWorkflow"
       }
-    }
+    },
+    "addons": {},
+    "decorators": {},
+    "layouts": {},
+    "plugins": {
+      "MiniProject2": {
+        "src": "src/plugins/MiniProject2",
+        "test": "test/plugins/MiniProject2"
+      }
+    },
+    "routers": {},
+    "visualizers": {}
   },
   "dependencies": {
-    "seeds": {}
+    "seeds": {},
+    "addons": {},
+    "decorators": {},
+    "layouts": {},
+    "plugins": {},
+    "routers": {},
+    "visualizers": {}
   }
 }
